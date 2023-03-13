@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>faltu form</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            padding: 10px 0;
+        }
+        button{
+            margin-left: 5px;
+            font-size: large;
+        }
+        input{
+            padding: 15px;
+            font-size: large;
+        }
+    </style>
 </head>
-<body>
+<body onload="loadingInputData()">
     <h1>faltu form</h1>
+    
+    <!-- name field  -->
+    <div>
+        <input type="text" name="" id="nameField" placeholder="name">
+        <button onclick="addName()">add</button>
+        <button onclick="delName()">delete</button>
+    </div>
+
+    <!-- email field  -->
+    <div>
+        <input type="email" name="" id="emailField" placeholder="email">
+        <button onclick="addEmail()">add</button>
+        <button onclick="delEmail()">delete</button>
+    </div>
+
+    <!-- message field  -->
+    <div>
+        <input type="text" name="" id="messageField" placeholder="message">
+        <button onclick="addMessage()">add</button>
+        <button onclick="delMessage()">delete</button>
+    </div>
+
+
+    <div>
+        <button onclick="send()">Send</button>
+        <button onclick="reset()">Reset</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
